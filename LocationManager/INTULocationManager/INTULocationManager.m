@@ -491,7 +491,7 @@ static id _sharedInstance;
                 break;
         }
         if (needRequestAlways) {
-            NSAssert(needRequestAlways, "requestion always auth disabled to prevent app store connect warning.");
+            NSAssert(needRequestAlways, @"requestion always auth disabled to prevent app store connect warning.");
             // [self.locationManager requestAlwaysAuthorization];
         } else if (needRequestWhenInUse) {
             [self.locationManager requestWhenInUseAuthorization];
